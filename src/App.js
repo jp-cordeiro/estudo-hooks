@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="app">
       <Link to="/use-state">useState</Link>
-      <Link to="/use-effect">useState</Link>
+      <Link to="/use-effect">useEffect</Link>
     </div>
   );
 }

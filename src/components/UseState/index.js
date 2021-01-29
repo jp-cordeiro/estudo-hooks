@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import Produto from './Produto';
+import Produto from './Product';
 
 export default function UseState() {
-  const [dados, setDados] = useState(null);
+  const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
 
@@ -12,7 +12,7 @@ export default function UseState() {
     fetch(`https://ranekapi.origamid.dev/json/api/produto/${text}`)
       .then((response) => response.json())
       .then((json) => {
-        setDados(json);
+        setData(json);
       })
       .catch((error) => {
         setError(error);
@@ -44,7 +44,7 @@ export default function UseState() {
       </button>
       {error && <p>Erro na requisição.</p>}
       {loading && <p>Carregando ...</p>}
-      {dados && <Produto dados={dados} />}
+      {data && <Produto data={data} />}
     </div>
   );
 }
