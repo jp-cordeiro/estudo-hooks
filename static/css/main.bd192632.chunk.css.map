@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/app.css"],"names":[],"mappings":"AAAA,KACE,YAAa,CACb,cACF,CAEA,EACE,WACF","file":"main.bd192632.chunk.css","sourcesContent":[".app {\n  display: flex;\n  flex-wrap: wrap;\n}\n\na {\n  margin: 10px;\n}\n"]}
