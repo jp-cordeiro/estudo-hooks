@@ -6,7 +6,7 @@ import UseEffect from './components/UseEffect';
 
 export default function Routes() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/estudo-hooks/">
       <Switch>
         <Route exact path="/" component={App} />
         <Route path="/use-state" component={UseState} />
