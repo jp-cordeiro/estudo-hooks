@@ -1,0 +1,16 @@
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import App from './App';
+import UseState from './components/UseState';
+
+export default function Routes() {
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={App} />
+        <Route path="/use-state" component={UseState} />
+        <Route path="/use-effect" />
+      </Switch>
+    </BrowserRouter>
+  );
+}
