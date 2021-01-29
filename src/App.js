@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom';
 
+import './app.css';
+
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Link to="/use-state">useState</Link>
+      <Link to="/use-effect">useState</Link>
     </div>
   );
 }
